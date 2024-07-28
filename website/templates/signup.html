@@ -1,0 +1,90 @@
+{% extends "template.html" %} {% block title %}Sign Up{% endblock %} {% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+      <!-- Start of login grid -->
+      <div class="grid grid-rows-5 grid-cols-5 h-screen">
+        <!-- login -->
+        <div class="row-span-5 col-start-2 col-end-5 rounded-3xl relative z-10">
+          <div
+            class="absolute top-4/4 left-1/2 transform 
+            -translate-x-1/2 -translate-y-1/2 bg-gray-200 
+            border-solid border-slate-300	border-2 shadow-2xl"
+            style="
+              width: 900px;
+              height: 600px;
+              border-radius: 999px;
+              z-index: 1;
+              top: 50%;
+            "
+          ></div>
+            
+          <center>
+          <form method="POST"  class="relative z-20 mt-5">
+            <h1 class="text-4xl">Sign Up</h1>
+            <!-- random line -->
+            <div class="w-5/6 h-0.5 bg-cc8 mb-6"></div>
+            
+            <div class="form-group max-w-xl">
+              <label for="username" class="text-lg">Username</label>
+              <input 
+                type="username" 
+                class="form-control shadow-2xl" 
+                id="username" 
+                name="username"
+                placeholder="Enter Username"
+                required
+              />
+            </div>
+
+            <div class="form-group max-w-xl">
+              <label for="email" class="text-lg">Email address</label>
+              <input 
+                type="email" 
+                class="form-control shadow-2xl" 
+                id="email" 
+                name="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+
+            <div class="form-group max-w-xl">
+                <label for="password" class="text-lg">Password</label>
+                  <input 
+                  type="password" 
+                  class="form-control shadow-2xl" 
+                  id="password1" 
+                  name="password1"
+                  placeholder="Enter password"
+                  required
+                  />
+            </div>
+        
+            <div class="form-group max-w-xl">
+                <label for="password2" class="text-lg">Confirm Your Password</label>
+                <input 
+                type="password" 
+                class="form-control shadow-2xl"  
+                id="password2" 
+                name="password2"
+                placeholder="Confirm Your Password"
+                required
+                />
+              </div>
+        
+        <button type="submit" class="btn bg-slate-500 shadow-2xl text-white"> Sign Up </button>
+        <br><br>
+        <a href="/login" class ="font-bold" > Fat Fingered? </a>
+      </center>
+        </form>
+        </div>
+      </div>
+  </body>
+</html>
+{% endblock %}

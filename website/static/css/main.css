@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+        height: 900px; 
+        width: cover;
+}
+
+.alert{
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 50%;
+        margin-top: 2vh;
+        box-shadow: 3px 10px 10px rgb(0 0 0 / 0.4);
+        z-index: 300;
+}
+.ball{
+        display: block;
+        position:absolute;
+        height:auto;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin-bottom:20px;
+}
+.lightBG{
+        margin-right: 6vw;
+        margin-left: 6vw;
+        shadow-color: #f1f5f9;
+        filter: drop-shadow(0 0 0.4rem white);
+        border-left-style: solid;
+        border-right-style: solid;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-width: 0.05rem;
+}
+h3{
+        text-align: center;
+}
+
+.choice{
+      margin-top: 2vh;
+      margin-bottom: 5vh;
+      border-radius: 2vh;
+      width: 80%;
+      filter: drop-shadow(0 0 0.1rem white);
+      height: max-content;
+}
+
+  * { box-sizing: border-box; }
+
+body { 
+        font-family: sans-serif;
+        
+ }
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+        display: none;
+      }
+      
+.main-gallery{
+        border: thick solid #a3a3a3;
+        box-shadow: 0px 0px 4px 1px grey;
+
+
+}      
+.gallery-cell {
+  width: 40vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  margin-right: 2rem;
+  border: medium solid #a3a3a3;
+  box-shadow: 0px 0px 7px 1px grey;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+       .static-banner {
+        position: absolute;
+        background: hsla(0, 0%, 0%, 0.3);
+        z-index: 1;
+        padding: 2px 20px;
+        font-size: 26px;
+        color: white;
+        pointer-events: none;
+      }
+
+      .static-banner1 {
+        left: 10px;
+        top: 10px;
+      }
+      
+      .static-banner2 {
+        right: 10px;
+        bottom: 10px;
+      }
+
+      .background {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }

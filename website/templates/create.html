@@ -1,0 +1,34 @@
+{% extends "template.html" %} {% block title %}Home{% endblock %} 
+{% block content%}
+<center>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+
+<div class="bg-zinc-800 bg-cover h-fit lightBG pb-4">
+    <h1>BASDASDASDASD</h1>
+    <form method = 'POST' class="bg-zinc-500 py-3 w-4/6 rounded-lg border-2 border-zinc-400 h-screen">
+        
+
+        <!-- Body Text -->
+        <textarea name="text" id="text" class="form-control w-3/4"> </textarea>
+       
+        <!-- buttons -->
+        <br />
+        <div>
+            <button type="submit"             
+            class='h-8 bg-zinc-600 rounded mt-4 text-zinc-50 
+            hover:bg-zinc-700 transition ease-in-out delay-50 w-1/4' 
+            style="text-shadow: 0px 0px 8px #bfbfbf;">Post</button>
+        </div>
+
+        <div>
+            <a href="/home">
+                <button type="button"             
+                class='h-8 bg-zinc-600 rounded text-zinc-50 w-1/4
+                hover:bg-zinc-700 transition ease-in-out mt-1 delay-50' 
+                style="text-shadow: 0px 0px 8px #bfbfbf;"> Back </button>
+            </a>
+        </div>
+    </form>
+</center>
+</div>
+{% endblock %}

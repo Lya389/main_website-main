@@ -1,0 +1,98 @@
+{% extends "template.html" %} {% block title %}choice{% endblock %}{% block content %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+
+<body>
+  <div class="lightBG">
+    <div class="bg-zinc-800">
+      <!-- 3 options grid -->
+      <div class="grid grid-rows-1 grid-cols-3 h-min justify-items-center"> 
+
+      <!-- Classics Game (left most one) -->
+      <button class="col-span-1 choice rounded-xl">
+        <!-- background image-->
+        <div class="bg-[url('/static/assets/img/background1.png')] 
+        rounded-xl	grayscale-0 hover:grayscale" style="height: 600px;">
+           <br>
+           <div class="group hover:size-full hover:rounded-xl hover:pl-2 
+           hover:pr-2 hover:pt-8 hover:md:bg-opacity-50 hover:bg-slate-400 ball transition-all duration-300 ease-in-out">
+        <!-- title -->
+        <h3 class="font-bold opacity-0 group-hover:opacity-100 
+        transition-opacity duration-300 ease-in-out transform 
+        group-hover:translate-y-0 translate-y-4">
+          Subject: Classics            
+        <div class="px-8 pt-8">
+              <!-- desc -->
+              Enter a fantasy world where coding is magic! In SpellCode: Enchanted Realms, 
+              players write code to cast spells, solve puzzles, and navigate quests. 
+              Learn programming concepts while exploring enchanted forests, ancient ruins, 
+              and mystical realms. Your coding skills will shape your adventure and determine your destiny.
+              <!-- what internals, and externals will we be covering -->
+               <h3 class="pt-8"> What you will be learning? </h3>
+               <div class="pt-2">- ADASDA<br> - ADKASDKASDNADS <br> - Iballs </div>
+            </div>
+            </div>
+        </div>
+      </button>
+
+      <!-- Digital Game (Centered most one) -->
+      <button class="col-span-1 choice rounded-xl">
+        <!-- background image-->
+        <div class="bg-[url('/static/assets/img/background2.png')] 
+        rounded-xl	grayscale-0 hover:grayscale" style="height: 600px;">
+           <br>
+           <div class="group hover:size-full hover:rounded-xl hover:pl-2 
+           hover:pr-2 hover:pt-8 hover:md:bg-opacity-50 hover:bg-slate-400 ball transition-all duration-300 ease-in-out">
+        <!-- title -->
+        <h3 class="font-bold opacity-0 group-hover:opacity-100 
+        transition-opacity duration-300 ease-in-out transform 
+        group-hover:translate-y-0 translate-y-4">
+          Subject: Digital            
+        <div class="px-8 pt-8">
+              <!-- desc -->
+              Enter a fantasy world where coding is magic! In SpellCode: Enchanted Realms, 
+              players write code to cast spells, solve puzzles, and navigate quests. 
+              Learn programming concepts while exploring enchanted forests, ancient ruins, 
+              and mystical realms. Your coding skills will shape your adventure and determine your destiny.
+              <!-- what internals, and externals will we be covering -->
+               <h3 class="pt-8"> What you will be learning? </h3>
+               <div class="pt-2">- ADASDA<br> - ADKASDKASDNADS <br> - Iballs </div>
+            </div>
+            </div>
+        </div>
+      </button>
+
+      <!-- Japanese Game (Right most one) -->
+      <button class="col-span-1 choice rounded-xl">
+        <!-- background image-->
+        <div class="bg-[url('/static/assets/img/background3.png')] 
+        rounded-xl	grayscale-0 hover:grayscale" style="height: 600px;">
+           <br>
+           <div class="group hover:size-full hover:rounded-xl hover:pl-2 
+           hover:pr-2 hover:pt-8 hover:md:bg-opacity-50 hover:bg-slate-400 ball transition-all duration-300 ease-in-out">
+        <!-- title -->
+        <h3 class="font-bold opacity-0 group-hover:opacity-100 
+        transition-opacity duration-300 ease-in-out transform 
+        group-hover:translate-y-0 translate-y-4">
+          Subject: Japanese            
+        <div class="px-8 pt-8">
+              <!-- desc -->
+              Enter a fantasy world where coding is magic! In SpellCode: Enchanted Realms, 
+              players write code to cast spells, solve puzzles, and navigate quests. 
+              Learn programming concepts while exploring enchanted forests, ancient ruins, 
+              and mystical realms. Your coding skills will shape your adventure and determine your destiny.
+              <!-- what internals, and externals will we be covering -->
+               <h3 class="pt-8"> What you will be learning? </h3>
+               <div class="pt-2">- ADASDA<br> - ADKASDKASDNADS <br> - Iballs </div>
+            </div>
+            </div>
+        </div>
+      </button>
+
+</body>
+{% endblock %}

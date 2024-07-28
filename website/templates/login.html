@@ -1,0 +1,70 @@
+{% extends "template.html" %} {% block title %}Login{% endblock %} {% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- background -->
+      <!-- Start of login grid -->
+      <div class="grid grid-rows-5 grid-cols-5 h-screen">
+        <!-- login -->
+        <div class="row-start-2 row-end-5 col-start-2 col-end-5 rounded-3xl relative z-10">
+          <div
+            class="absolute top-4/4 left-1/2 transform 
+            -translate-x-1/2 -translate-y-1/2 bg-gray-200 
+            border-solid border-slate-300	border-2 shadow-2xl"
+            style="
+              width: 900px;
+              height: 600px;
+              border-radius: 999px;
+              z-index: 1;
+              top: 50%;
+            "
+          ></div>
+
+          <form method="POST" class="relative z-20">
+            <center>
+              <h1 class="pt-5 pb-4 text-4xl">Login</h1>
+              <!-- random line -->
+              <div class="w-5/6 h-0.5 bg-cc8 mb-6"></div>
+
+              <!-- form inputs -->
+              <div class="form-group max-w-xl">
+                <label for="email" class="text-lg">Email address</label>
+                <input
+                  type="email"
+                  class="form-control shadow-2xl"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+
+              <div class="form-group max-w-xl">
+                <label for="password" class="text-lg">Password</label>
+                <input
+                  type="password"
+                  class="form-control shadow-2xl"
+                  id="password"
+                  name="password"
+                  placeholder="Enter Password"
+                  required
+                />
+              </div>
+              <br>
+              <button type="submit" class="btn bg-slate-500 shadow-2xl text-white">Login</button>
+              <br><br>
+              <!-- link to sign up -->
+              <a href="/signup" class ="font-bold" > Dont have an account? </a>
+            </center>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "template.html" %} {% block title %}Update{% endblock %}{% block content %}
+   <div class="bg-zinc-800 bg-cover h-fit lightBG">
+      <div class="grid">
+         {% if user.id == 1 and current_user.id == 1 %}
+         <div align="center">
+           <a href="/admin">
+              <button type='button' 
+              class='h-8 bg-zinc-600 w-80 rounded mb-4 mt-4 text-zinc-50 hover:bg-zinc-700 transition ease-in-out delay-50' 
+              style="text-shadow: 0px 0px 8px #bfbfbf;">
+               Admin? Making post?
+             </button>
+           </a>
+               </div>
+         {% endif %}
+  <div id ="posts" class="mx-10 my-96">
+   {% for post in posts%}
+   <div class = "card border-dark">
+      <div class="card-header d-flex justify-content-between align-items-center">
+         <a href="/posts/{{post.user.username}}">{{post.user.username}}</a>
+         {% if user.id == post.author %}
+         <div class="btn-group">
+            <button
+            type="button"
+            class="btn btn-sm btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown">
+         </button>
+         <ul class="dropdown-menu place-self-center">
+            <li>
+               <a href="/delete-post/ {{post.id}}" class="dropdown-item">Delete</a>
+            </li>
+         </ul>
+         </div>
+         {% endif %}
+      </div>
+   <div class="card-body">
+      <div class="card-text">{{post.text}}</div>
+   </div>
+   <div class="card-footer text-muted">{{post.date_created}}</div>
+   </div>
+   <br />
+   {% endfor %}
+</div>
+<br/>
+
+</div>
+</html>
+
+{% endblock %}

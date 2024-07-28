@@ -1,0 +1,75 @@
+{% extends "template.html" %} {% block title %}home{% endblock %}{% block content %}
+  
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <script src="/path/to/flickity.pkgd.min.js"></script>
+  <center>
+  <div class="bg-zinc-800 bg-cover lightBG">
+    <!-- Start of the Grid -->
+    <div class="grid grid-rows-5 grid-cols-5 grid-flow-col h-screen grid-parent"> 
+      <!-- main menu and title -->
+      <div class="row-span-5 max-w-96">
+        <div class="grid grid-cols-1 grid-rows-5 grid-child h-screen">
+          <!-- title -->
+          <h1 class="row-span-1 my-auto text-4xl text-right pt-40 mr-16 font-bold">
+            COAL;F
+          </h1>
+          {% if user.is_authenticated %}
+          <!-- main menu -->
+          <div class="row-span-4 font-medium text-2xl text-slate-500 my-auto text-left ps-14">
+            <a href="/choice" class =" hover:underline">Learn</a>
+            <br>
+            <!-- patch notes -->
+            <a href="/updates" class =" hover:underline">Update</a>
+            <br>
+            <!-- login/signup -->
+            <!-- change the text below if they're currently signed it or not.-->
+            <a href="/logout" class ="hover:underline">Logout</a>
+          {% else %}
+          <!-- main menu -->
+          <div class="row-span-4 font-medium text-2xl text-slate-500 my-auto text-left ps-14">
+              <h8 class="line-through">Learn</h8>
+              <br>
+              <!-- patch notes -->
+              <a href="/updates" class ="hover:underline">Update</a>
+              <br>
+              <!-- login/signup -->
+              <!-- change the text below if they're currently signed it or not.-->
+              <a href="/login" class ="hover:underline">Login</a>
+          {% endif %}
+          </div>
+      </div>
+      </div>
+    <div class="row-span-3 col-start-2 col-span-4 pb-20">
+      <!-- CAROUSEL FOR FLEXING COOL STUFF -->
+       <!-- Flickity HTML init -->
+       <div class="mt-10 mr-10">
+        <div class="main-gallery js-flickity" style="border-radius: 10px;" data-flickity='{ "wrapAround": true, 
+        "prevNextButtons": false, "pageDots": false, "autoPlay": 5000, "cellSelector": ".gallery-cell"}'>
+        <div class="static-banner">eat my ass 1</div>
+          <div class="gallery-cell" style="background-image: url(static/assets/img/1.jpg)"></div>
+          <div class="gallery-cell" style="background-image: url(static/assets/img/2.jpg)"></div>
+          <div class="gallery-cell" style="background-image: url(static/assets/img/3.jpg)"></div>
+          <div class="gallery-cell" style="background-image: url(static/assets/img/4.jpg)"></div>
+          <div class="gallery-cell" style="background-image: url(static/assets/img/5.jpg)"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- About -->
+    </script>
+
+  </center>
+</body>
+</html>
+{% endblock %}
