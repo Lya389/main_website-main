@@ -1,5 +1,5 @@
 {% extends "template.html" %} {% block title %}Update{% endblock %}{% block content %}
-   <div class="bg-zinc-800 bg-cover h-fit lightBG">
+   <div class="bg-zinc-800 bg-cover h-screen lightBG">
       <div class="grid">
          {% if user.id == 1 and current_user.id == 1 %}
          <div align="center">
@@ -12,7 +12,7 @@
            </a>
                </div>
          {% endif %}
-  <div id ="posts" class="mx-10 my-96">
+  <div id ="posts" class="mx-10 my-24">
    {% for post in posts%}
    <div class = "card border-dark">
       <div class="card-header d-flex justify-content-between align-items-center">

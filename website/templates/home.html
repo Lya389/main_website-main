@@ -11,39 +11,36 @@
 <body>
   <script src="/path/to/flickity.pkgd.min.js"></script>
   <center>
-
-<div class="text-white bg-zinc-800 bg-fill lightBG">
   <!-- Start of the Grid -->
-  <div>
-  <!-- title -->
-  <h1 class="mb-8 pt-8 text-5xl">COAL;F</h1>
-  {% if user.is_authenticated %}
-  <!-- main menu -->
-  <div class="text-2xl h-96 mt-96">
-    <a href="/choice" class =" hover:underline">Learn</a>
-    <br>
-    <!-- patch notes -->
-    <a href="/updates" class =" hover:underline">Update</a>
-    <br>
-    <!-- login/signup -->
-    <!-- change the text below if they're currently signed it or not.-->
-    <a href="/logout" class ="hover:underline">Logout</a>
-  {% else %}
-  <!-- main menu -->
-  <div class="text-2xl h-96 mt-96">
-      <h8 class="line-through">Learn</h8>
+  <div class="grid grid-rows-8 lightBG bg-zinc-800 text-white">
+    <!-- title -->
+    <h1 class="mb-4 pt-24 text-5xl font-bold mt-8">COAL;F</h1>
+    {% if user.is_authenticated %}
+    <!-- main menu -->
+    <div class="text-2xl h-96 mt-20">
+      <a href="/choice" class =" hover:underline">Learn</a>
       <br>
       <!-- patch notes -->
-      <a href="/updates" class ="hover:underline">Update</a>
+      <a href="/updates" class =" hover:underline">Update</a>
       <br>
       <!-- login/signup -->
       <!-- change the text below if they're currently signed it or not.-->
-      <a href="/login" class ="hover:underline">Login</a>
-  {% endif %}
-  </div>
+      <a href="/logout" class ="hover:underline">Logout</a>
+    {% else %}
+    <!-- main menu -->
+    <div class="text-2xl h-96 mt-96">
+        <h8 class="line-through">Learn</h8>
+        <br>
+        <!-- patch notes -->
+        <a href="/updates" class ="hover:underline">Update</a>
+        <br>
+        <!-- login/signup -->
+        <!-- change the text below if they're currently signed it or not.-->
+        <a href="/login" class ="hover:underline">Login</a>
+    {% endif %}
+    </div>
   </div>
 
-</div>
 </div>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

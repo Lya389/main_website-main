@@ -33,13 +33,14 @@
 .lightBG{
         margin-right: 6vw;
         margin-left: 6vw;
-        shadow-color: #f1f5f9;
+        box-shadow: #f1f5f9;
         filter: drop-shadow(0 0 0.4rem white);
         border-left-style: solid;
         border-right-style: solid;
         border-top-style: none;
         border-bottom-style: none;
         border-width: 0.05rem;
+        margin-bottom: -5vw;
 }
 h3{
         text-align: center;
