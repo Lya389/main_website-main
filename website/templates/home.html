@@ -10,11 +10,13 @@
 
 <body>
   <script src="/path/to/flickity.pkgd.min.js"></script>
-  <center>
+  <center class="lightBG bg-zinc-800 h-screen">
   <!-- Start of the Grid -->
-  <div class="grid grid-rows-8 lightBG bg-zinc-800 text-white">
+  <div class="grid grid-rows-2 text-white">
     <!-- title -->
-    <h1 class="mb-4 pt-24 text-5xl font-bold mt-8">COAL;F</h1>
+    <h1 class="mb-4 pt-24 text-5xl font-bold mt-8">
+      COAL;F
+    </h1>
     {% if user.is_authenticated %}
     <!-- main menu -->
     <div class="text-2xl h-96 mt-20">
@@ -28,8 +30,8 @@
       <a href="/logout" class ="hover:underline">Logout</a>
     {% else %}
     <!-- main menu -->
-    <div class="text-2xl h-96 mt-96">
-        <h8 class="line-through">Learn</h8>
+    <div class="text-2xl h-96 mt-20">
+      <h8 class="line-through">Learn</h8>
         <br>
         <!-- patch notes -->
         <a href="/updates" class ="hover:underline">Update</a>
@@ -40,13 +42,9 @@
     {% endif %}
     </div>
   </div>
-
 </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <!-- About -->
-    </script>
 
   </center>
 </body>
